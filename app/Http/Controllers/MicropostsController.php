@@ -54,9 +54,5 @@ class MicropostsController extends Controller
             return back()
                 ->with('success','Delete Successful');
         }
-
-        // 前のURLへリダイレクトさせる
-        return back()
-            ->with('Delete Failed');
     }
 }
