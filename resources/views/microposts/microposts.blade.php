@@ -30,6 +30,12 @@
                                 </form>
                             @endif
                         </div>
+                        <div>
+                            @if (Auth::id() != $micropost->user_id)
+                                {{-- お気に入り／解除ボタン --}}
+                                @include('user_favorite.favorite_button')
+                            @endif
+                        </div>
                     </div>
                 </li>
             @endforeach
